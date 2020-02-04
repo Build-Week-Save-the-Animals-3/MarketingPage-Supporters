@@ -1,42 +1,57 @@
 body {
-    background-color: #ffba59;
+    background-color: @mainColor;
+    color: @darkColor;
     margin-left: 12%;
     margin-top: 2%;
     margin-bottom: 2%;
     width: 1200px;
-    font-family: 'lato', sans-serif;
+    font-family: @mainFont;
     
 }
 h1 {
     font-size: 3.5rem;
-    color: #ffba59;
+    color: @mainColor;
     font-family: 'Sigmar One', cursive;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2{
-    font-size: 2.8rem;
+    font-size: 3rem;
     line-height: 3rem;
     text-align: center;
-    color: #321205
+    font-weight: bold;
+    
+    
 }
  h3{
      font-size: 1.6rem;
      text-align: center;
-     color: #321205;
+     
  }
  
  a{
      font-size: 1.5rem;
      text-decoration: none;
-     color: #321205;
-     font-family: 'lato', sans-serif;
+     color: @darkColor;
+     font-family: @mainFont;
  }
 
  p{
-     color: #321205;
+     line-height: 1.6rem;
+     
  }
+ 
 
  img{
      border-radius: 10px;
  }
+
+ button{
+    font-family: @mainFont;
+    font-size: 1rem;
+    background-color: @darkColor;
+    color: @mainColor;
+    border-radius: 5px;
+    .little_btn();
+ }
+
