@@ -1,13 +1,19 @@
 .sections {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 .little_btn {
   padding: 1%;
   margin-top: 3%;
   width: 35%;
   cursor: pointer;
+  transition: 400ms ease;
+}
+.little_btn:hover {
+  background-color: #fcc065;
+  color: #321205;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -140,11 +146,18 @@ table {
 body {
   background-color: #ffe6ad;
   color: #321205;
-  margin-left: 12%;
+  margin-left: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 1200px;
+  width: 90%;
   font-family: 'lato', sans-serif;
+}
+@media (max-width: 500px) {
+  body {
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
 }
 h1 {
   font-size: 3.5rem;
@@ -152,11 +165,21 @@ h1 {
   font-family: 'Sigmar One', cursive;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 h2 {
   font-size: 3rem;
   line-height: 3rem;
   text-align: center;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1rem;
+  }
 }
 h3 {
   font-size: 1.6rem;
@@ -167,6 +190,11 @@ a {
   text-decoration: none;
   color: #321205;
   font-family: 'lato', sans-serif;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 0.7rem;
+  }
 }
 p {
   line-height: 1.6rem;
@@ -184,17 +212,32 @@ button {
   margin-top: 3%;
   width: 35%;
   cursor: pointer;
+  transition: 400ms ease;
+}
+button:hover {
+  background-color: #fcc065;
+  color: #321205;
 }
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-image: url("../img/header.png");
-  height: 68vh;
+  height: 58vh;
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 8px;
+  margin-left: 7%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    height: 20vh;
+    width: 38%;
+    align-items: flex-start;
+  }
 }
 header nav {
   display: flex;
@@ -203,30 +246,78 @@ header nav {
   width: 40%;
   background-color: #ffe6ad;
   border-radius: 5px;
-  margin-bottom: 25%;
-  margin-left: 55%;
+  margin-bottom: 18%;
+  margin-left: 42%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    width: 50%;
+    height: 10%;
+    margin-bottom: 10%;
+    margin-left: 48%;
+  }
 }
 header nav a {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   margin: 2% 1%;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 2%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+  background-color: #321205;
+  margin-top: 2%;
+  font-size: 1rem;
+  color: #ffe6ad;
+}
+footer img {
+  height: 60%;
+}
+footer a {
+  color: #ffe6ad;
+  font-size: 0.7rem;
 }
 .sub {
   margin-top: 3%;
   margin-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #fff1bd;
+  text-align: center;
+  margin-right: 10%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .sub {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .intro {
   display: flex;
   justify-content: center;
-  text-align: center;
   width: 60%;
   margin-left: 20%;
 }
 .first_section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
   text-align: center;
 }
 .first1 {
@@ -242,16 +333,36 @@ header nav a {
 .second_section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  width: 100%;
+  background-color: #fff1bd;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 #btn_large {
   width: 30%;
   display: flex;
   justify-content: center;
   background-color: #321205;
-  color: #ffba59;
+  color: #ffe6ad;
   border-radius: 5px;
   padding: 1%;
   margin-left: 35%;
+  transition: 400ms ease;
+}
+#btn_large:hover {
+  background-color: #fcc065;
+  color: #321205;
+}
+.spotlight {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.spot2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
 }
