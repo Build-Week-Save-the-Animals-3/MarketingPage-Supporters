@@ -4,6 +4,11 @@
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .sections {
+    flex-direction: column;
+  }
+}
 .little_btn {
   padding: 1%;
   margin-top: 3%;
@@ -146,7 +151,7 @@ table {
 body {
   background-color: #ffe6ad;
   color: #321205;
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
   width: 90%;
@@ -154,7 +159,7 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    margin-left: 1%;
+    margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
   }
@@ -178,12 +183,17 @@ h2 {
 }
 @media (max-width: 500px) {
   h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 h3 {
   font-size: 1.6rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.3rem;
+  }
 }
 a {
   font-size: 1.5rem;
@@ -194,10 +204,16 @@ a {
 @media (max-width: 500px) {
   a {
     font-size: 0.7rem;
+    font-weight: bold;
   }
 }
 p {
   line-height: 1.6rem;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 0.9rem;
+  }
 }
 img {
   border-radius: 10px;
@@ -235,8 +251,9 @@ header {
   header {
     display: flex;
     height: 20vh;
-    width: 38%;
+    width: 100%;
     align-items: flex-start;
+    margin-left: 1%;
   }
 }
 header nav {
@@ -282,12 +299,28 @@ footer {
   font-size: 1rem;
   color: #ffe6ad;
 }
+@media (max-width: 500px) {
+  footer {
+    height: 10vh;
+  }
+}
 footer img {
   height: 60%;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 0.7rem;
+  }
 }
 footer a {
   color: #ffe6ad;
   font-size: 0.7rem;
+}
+@media (max-width: 500px) {
+  footer a {
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+  }
 }
 .sub {
   margin-top: 3%;
@@ -305,6 +338,7 @@ footer a {
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+    margin-left: 1%;
   }
 }
 .intro {
@@ -313,6 +347,12 @@ footer a {
   width: 60%;
   margin-left: 20%;
 }
+@media (max-width: 500px) {
+  .intro {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 .first_section {
   display: flex;
   flex-direction: row;
@@ -320,11 +360,28 @@ footer a {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .first_section {
+    flex-direction: column;
+  }
+}
 .first1 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .first1 a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .first1 {
+    width: 90%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+  }
 }
 .second {
   display: flex;
@@ -340,6 +397,11 @@ footer a {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .second_section {
+    flex-direction: column;
+  }
+}
 #btn_large {
   width: 30%;
   display: flex;
@@ -351,6 +413,12 @@ footer a {
   margin-left: 35%;
   transition: 400ms ease;
 }
+@media (max-width: 500px) {
+  #btn_large {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
 #btn_large:hover {
   background-color: #fcc065;
   color: #321205;
@@ -360,9 +428,33 @@ footer a {
   justify-content: space-evenly;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .spotlight img {
+    margin-left: 3%;
+    height: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .spotlight {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+  }
+}
 .spot2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .spot2 a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .spot2 {
+    width: 90%;
+    text-align: center;
+  }
 }

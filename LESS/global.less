@@ -1,14 +1,14 @@
 body {
     background-color: @mainColor;
     color: @darkColor;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     width: 90%;
     font-family: @mainFont;
     
     @media @mobile{
-        margin-left: 1%;
+        margin-left: 5%;
         margin-top: 1%;
         margin-bottom: 1%;
         
@@ -35,13 +35,17 @@ h2{
     font-weight: bold;
     
     @media @mobile{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     
 }
  h3{
      font-size: 1.6rem;
      text-align: center;
+
+     @media @mobile{
+         font-size: 1.3rem;
+     }
      
  }
  
@@ -53,12 +57,16 @@ h2{
 
      @media @mobile{
          font-size: .7rem;
+         font-weight: bold;
      }
  }
 
  p{
      line-height: 1.6rem;
-     
+
+     @media @mobile{
+         font-size: .9rem;
+     }
  }
  
 
