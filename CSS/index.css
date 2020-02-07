@@ -461,3 +461,45 @@ footer a {
     text-align: center;
   }
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main a {
+    font-size: 1.5rem;
+  }
+}
+.main a:hover {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: ease 200ms;
+}
+.first1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 16%;
+  margin: 2%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .first1 {
+    width: 50%;
+  }
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 2%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .first {
+    flex-direction: column;
+  }
+}
